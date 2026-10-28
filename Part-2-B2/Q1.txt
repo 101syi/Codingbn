@@ -1,0 +1,5 @@
+/* Part2-B2-Q1 */
+select d.department_name, s.student_name, s.gpa
+from student_table s
+join department_table d on s.department_id = d.department_id
+order by d.department_name asc, s.gpa asc
