@@ -1,5 +1,5 @@
 /* Part2-B2-Q4 */
-select  d.department_name, avg(s.gpa) as average_gpa
+select  d.department_name, round(avg(s.gpa),2) as average_gpa
 from student_table s
 join department_table d on s.department_id = d.department_id
 group by d.department_name 
